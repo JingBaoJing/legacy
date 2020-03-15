@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>酒店预订</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+</head>
+<body>
+<div id="box">
+    <h1>订单填写</h1>
+    <form role="form" method="post">
+        <div class="form-group">
+            <label for="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户</label>
+            <input name="name" type="text" class="form-control" id="name" value="{$mname}">
+        </div>
+        <div class="form-group">
+            <label for="realname">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;姓名</label>
+            <input name="realname" type="text" class="form-control" id="realname" placeholder="请输入姓名">
+        </div>
+        <div class="form-group">
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;性别</label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="sex" id="optionsRadios1" value="男" checked>男
+                </label>
+                <label>
+                    <input type="radio" name="sex" id="optionsRadios2" value="女">女
+                </label>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="id">身份证号</label>
+            <input name="id" type="text" class="form-control" id="id" placeholder="请输入身份证号">
+        </div>
+        <div class="form-group">
+            <label for="phone">电话号码</label>
+            <input name="phone" type="text" class="form-control" id="phone" placeholder="请输入电话号码">
+        </div>
+        <div class="form-group">
+            <label for="email">电子邮箱</label>
+            <input name="email" type="text" class="form-control" id="email" placeholder="请输入电话号码">
+        </div>
+        <div class="form-group">
+            <label for="addtime">入住时间</label>
+            <input name="addtime" type="text" class="form-control" id="addtime" placeholder="请输入入住时间">
+        </div>
+        <div class="form-group">
+            <label for="days">入住天数</label>
+            <input name="days" type="text" class="form-control" id="days" placeholder="请输入入住天数">
+        </div>
+        <div class="form-group">
+            <label for="roomtype">房间类型</label>
+            <select name="roomtype" id="roomtype">
+                <option selected value="单人间">单人间</option>
+                <option value="双人间">双人间</option>
+                <option value="标间">标间</option>
+                <option value="套房">套房</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="roomrank">房间等级</label>
+            <select name="roomrank" id="roomrank">
+                <option selected value="经济间">经济间</option>
+                <option value="标准间">标准间</option>
+                <option value="高级间">高级间</option>
+                <option value="豪华间">豪华间</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="payways">支付方式</label>
+            <select name="payways" id="payways">
+                <option selected value="建设银行汇款">建设银行汇款</option>
+                <option value="交通银行汇款">交通银行汇款</option>
+                <option value="邮局汇款">邮局汇款</option>
+                <option value="网上支付">网上支付</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ly">增加留言</label>
+            <textarea id="ly" name="ly" cols="70" rows="5" ></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+        <button type="reset" class="btn btn-default">重置</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<style type="text/css">
+
+</style>
+<div class="col-md-8" id="carousel">
+<img src="__PUBLIC__/image/slide3.jpg" />
+</div>
+<div class="col-md-4" id="message">
+	<div id="gonggao">
+		<h2>本站公告：</h2>
+		<foreach name="notice" item="v">
+			<ul class="item">
+				<li>{$v.content}</li>
+			</ul>
+		</foreach>
+	</div>
+	<div id="pinglun">
+		<h2>本站评论：</h2>
+		<foreach name="comm" item="v">
+			<ul class="item">
+				<li>{$v.username}：{$v.comment}</li>
+			</ul>
+		</foreach>
+	</div>
+</div>

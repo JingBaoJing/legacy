@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查看订单</title>
+</head>
+<body>
+<div class="boox">
+    <foreach name="order" item="v">
+        <div class="col-md-4">
+        <ul class="item">
+            <li><a href="__CONTROLLER__/order/orderid/{$v.orderid}" target="_blank"><empty name="v.thumb"><img src="__PUBLIC__/image/preview.jpg"><else/><img src="__PUBLIC__/uploads/thumb/{$v.thumb}"></empty></a></li>
+            <li>姓名：{$v.realname}</li>
+            <li>性别：{$v.sex}</li>
+            <li>身份证号：{$v.id}</li>
+            <li>房间类型：{$v.roomtype}</li>
+            <li>房间等级：{$v.roomrank}</li>
+            <li>电话号码：{$v.phone}</li>
+            <li>电子邮箱：{$v.email}</li>
+            <li>预定时间：{$v.addtime}</li>
+            <li>预订天数：{$v.days}</li>
+            <li>付款方式：{$v.payways}</li>
+            <li>留言：{$v.ly}</li>
+        </ul>
+        <button type="submit" class="btn btn-primary" onclick="location.href='__MODULE__/Index/index'">返回主页</button>
+
+        </div>
+    </foreach>
+</div>
+</body>
+</html>

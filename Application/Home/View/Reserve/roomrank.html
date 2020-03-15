@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>room</title>
+</head>
+<body>
+<div id="room">
+    <div class="room-img">
+        <foreach name="roomrank" item="v">
+            <ul class="item left col-md-6">
+                <div class="col-md-6">
+                    <li><a href="__CONTROLLER__/room/rid/{$v.rid}" target="_blank"><empty name="v.thumb"><img src="__PUBLIC__/image/preview.jpg"><else/><img src="__PUBLIC__/uploads/thumb/{$v.thumb}"></empty></a></li>
+                </div>
+                <div class="col-md-6">
+                    <li>房间等级：{$v.roomrank}</li>
+                    <li>房间价格：￥{$v.roomprice}</li>
+                    <li>房间剩余：{$v.roomleft}</li>
+                    <li>房间简介：{$v.roombrief}</li>
+                    <button class="btn btn-primary"  onclick="location.href='__MODULE__/Reserve/reserve/roomtype/{$v.roomtype}/roomrank/{$v.roomrank}'" >预订</button>
+                </div>
+            </ul>
+        </foreach>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
